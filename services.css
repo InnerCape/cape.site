@@ -1,0 +1,187 @@
+/* ===== NAVBAR (STACKED STYLE) ===== */
+.navbar {
+  display: flex;
+  flex-direction: column; /* stack logo on top */
+  align-items: center;
+  padding: 8px 60px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+  margin-bottom: 8px; /* space between logo and nav links */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  justify-content: left;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #e63900;
+}
+.nav-links .active {
+  color: #e63900;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: url('Imagens.png/InnerCapelogo1.png') center/cover no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 150px 50px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+/* ===== PAGE HEADER ===== */
+.page-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: url(Imagens.png/giraffe-2233366_1280.jpg);
+    background-size: cover;
+  color: white;
+}
+
+.page-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ffece6; /* soft tint of your orange for harmony */
+}
+
+/* ===== SERVICE SECTION ===== */
+.service-detail {
+  display: flex;
+  align-items: align-items;
+  justify-content: space-between;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 1px solid #f1f1f1;
+  background: #fff;
+  transition: background 0.5s ease;
+}
+
+.service-detail:hover {
+  background: #fff7f5; /* faint orange tint on hover */
+}
+
+.service-detail.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-detail .text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.service-detail .text h2 {
+  color: #e63900;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.service-detail .text p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ===== IMAGE GALLERY ===== */
+.service-detail .images {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.service-detail .images img {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(230, 57, 0, 0.2); /* subtle orange shadow */
+  transition: transform 0.5s ease;
+}
+
+.service-detail .images img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== CTA BUTTON ===== */
+.cta-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #e63900;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta-btn:hover {
+  background: #0b3954;
+  transform: translateY(-2px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #0b3954;
+  color: white;
+  margin-top: 40px;
+  font-size: 0.95em;
+  letter-spacing: 0.3px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .service-detail {
+    flex-direction: column;
+    padding: 50px 5%;
+  }
+
+  .service-detail.reverse {
+    flex-direction: column;
+  }
+
+  .service-detail .images img {
+    width: 100%;
+  }
+}

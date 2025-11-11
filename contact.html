@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | InnerCape Tour & Travel</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ===== CONTACT PAGE CUSTOM STYLES ===== */
+    header.contact-header {
+      background-color: #0b3954;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      margin-bottom: 50px;
+      border-width: #0b3954;
+    }
+
+    header.contact-header h1 {
+      font-size: 2.6em;
+      color: #e63900;
+      margin-bottom: 12px;
+    }
+
+    header.contact-header p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #fff;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      gap: 40px;
+    }
+
+    .contact-info, .contact-form {
+      background-color: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 35px;
+      flex: 1;
+      min-width: 320px;
+    }
+
+    .contact-info h2, .contact-form h2 {
+      color: #e63900;
+      margin-bottom: 20px;
+      border-left: 5px solid #e63900;
+      padding-left: 10px;
+    }
+
+    .contact-info p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .contact-info a {
+      color: #0b3954;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #e63900;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: border-color 0.3s ease;
+    }
+
+    form input:focus, form textarea:focus {
+      border-color: #e63900;
+      outline: none;
+    }
+
+    form textarea {
+      height: 150px;
+      resize: none;
+    }
+
+    button {
+      background-color: #e63900;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #b52d00;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      color: white;
+      background-color: #0b3954;
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin-right: 10px;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: background 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background-color: #e63900;
+    }
+
+    footer {
+      background-color: #0b3954;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+      font-size: 0.95em;
+    }
+
+    /* WhatsApp Contact Section */
+.contact-info p a[href*="wa.me"] {
+  display: inline-block;
+  background-color: #e63900; /* WhatsApp green */
+  color: white;
+  padding: 10px 18px;
+  margin-top: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.contact-info p a[href*="wa.me"]:hover {
+  background-color: #1ebe5b;
+}
+
+.contact-info p strong {
+  color: #333;
+}
+
+.contact-info p {
+  margin: 6px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+    @media (max-width: 768px) {
+      header.contact-header h1 {
+        font-size: 2em;
+      }
+      .contact-info, .contact-form {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <div class="navbar">
+    <img src="Imagens.png/InnerCapelogo1.png" alt="InnerCape Logo" class="logo" />
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="contact-header">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach out and let’s plan your next adventure.</p>
+  </header>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>📍 Address:</strong> Mowbray, Cape Town, South Africa</p>
+      <p><strong>📞 Phone (WhatsApp):</strong> +27 67 751 9907</p>
+      <p><strong>📧 Email:</strong> <a href="mailto:innercapetown@gmail.com">innercapetown@gmail.com</a></p>
+      <p><strong>🕒 Hours:</strong> Monday–Saturday, 8:00 AM – 6:00 PM</p>
+      <p>
+      <strong>💬 Chat with us on WhatsApp:</strong>
+      <a href="https://wa.me/27677519907?text=Hi%20InnerCape%20Team!%20I%27m%20interested%20in%20your%20Cape%20Town%20packages." 
+         target="_blank">
+        Click here to send us a message
+      </a>
+    </p>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/inner_cape_town/" target="_blank">Instagram</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/xqawkdzb" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" placeholder="Type your message here..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 InnerCape. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
