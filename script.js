@@ -58,10 +58,13 @@ window.addEventListener("scroll", () => {
     const sectionHeight = sec.offsetHeight;
     const id = sec.getAttribute("id");
 
-    const link = document.querySelector(`.nav-links a[href*=${id}]`);
+    const link = document.querySelector(`.nav-links a[href*="${id}"]`);
     if (link) {
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
         link.classList.add("active");
       } else {
-  link.classList.remove("active");
+        link.classList.remove("active");
+      }
+    }
+  });
 });

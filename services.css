@@ -1,9 +1,25 @@
-/* ===== NAVBAR (STACKED STYLE) ===== */
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== GENERAL ===== */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
-  flex-direction: column; /* stack logo on top */
+  justify-content: space-between;
   align-items: center;
-  padding: 8px 60px;
+  padding: 8px 60px; /* reduced header height */
   background: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   position: sticky;
@@ -11,22 +27,20 @@
   z-index: 1000;
 }
 
-.logo {
-  width: 220px;
+.image {
   height: auto;
-  margin-bottom: 8px; /* space between logo and nav links */
-  transition: transform 0.3s ease;
+  max-width: 100%;
 }
 
+.logo {
+  width: 22vw; /* slightly smaller to fit compact header */
+  max-width: 300px;  
+  min-width: 100px;
+  height: auto;
+  margin-bottom: 4px; /* reduced space below logo */
+}
 .logo:hover {
   transform: scale(1.05);
-
-}
-
-.nav-links {
-  display: flex;
-  gap: 25px;
-  justify-content: left;
 }
 
 .nav-links a {
